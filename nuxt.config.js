@@ -5,14 +5,15 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Pure Hair Sherborne',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'The team at PURE HAIR are dedicated to creating desirable & wearable styles to ... Boutique Hairdressers Based In The Delightful Market Town Of Sherborne.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans&display=swap' },
+      { rel: 'stylesheet', href: '/favicon.ico' }
     ]
   },
   /*

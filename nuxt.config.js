@@ -22,8 +22,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: ['@/assets/scss/_all.scss'],
   /*
   ** Plugins to load before mounting the App
   */
@@ -38,10 +37,23 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/style-resources',
+    '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
   ],
+  styleResources: {
+    scss: [
+      './assets/scss/_variables.scss', // use underscore "_" & also file extension ".scss"
+      './assets/scss/_mediaquery.scss'
+    ]
+  },
+  /*
+  ** Axios module configuration
+  ** See https://axios.nuxtjs.org/options
+  */
+  axios: {
+  },
   /*
   ** Build configuration
   */
@@ -49,7 +61,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   }
 }
